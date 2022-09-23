@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    min-height: 4rem;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: rgb(237, 238, 181);
+    border-bottom: 2px solid black;
+}
+.navBar{
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+.navBarList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.navBarLink{
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgb(240, 241, 161);
+    color: rgb(0, 162, 255);
+    -webkit-text-stroke: 0.75px black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.carrito{
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+.carrito img{
+    min-height: 1.5rem;
+    max-height: 25%;
+}

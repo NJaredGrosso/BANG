@@ -1,0 +1,11 @@
+.greeting{
+    height: 100%;
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(0, 119, 255);
+    -webkit-text-stroke: 1px rgb(17, 17, 17);
+}
