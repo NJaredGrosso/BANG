@@ -1,18 +1,9 @@
 #itemList{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-#itemListComics{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1rem;
-}
-.itemListComicsIndividual{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(5, 15rem);
+    overflow: auto;
 }
