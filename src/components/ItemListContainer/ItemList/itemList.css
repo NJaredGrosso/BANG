@@ -1,0 +1,18 @@
+#itemList{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#itemListComics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.itemListComicsIndividual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

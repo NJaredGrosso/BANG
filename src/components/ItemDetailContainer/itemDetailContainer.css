@@ -1,0 +1,31 @@
+#itemDetail{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#itemDetailPortada{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#itemDetailPortadaImg{
+    max-height: 100%;
+    padding: 2rem;
+}
+
+#infoItem{
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#infoItemButton{
+    width: 60%;
+    margin: 2rem;
+}
