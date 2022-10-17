@@ -6,7 +6,7 @@ const data = [
         precio: 3000,
         descripcion: "Entrega número 15 de Amazing Fantasy donde se cuentan varias historias de marvel incluida la aparicion de El Sorprendente Spider-Man por primera vez en los comics contando la historia de como el joven Peter Parker es mordido por una araña que le proporsiona fantasticos poderes que debe aprender a dominar",
         stock: 10,
-        categoria: "Marvel",
+        categoria: "marvel",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const data = [
         precio: 2800,
         descripcion: "¿Qué pasaría si todo lo que pensabas que era divertido sobre Deadpool fuera realmente inquietante? ¿Qué pasaría si decidiera matar a todos y todo lo que conforma el Universo Marvel? ¿Y si realmente lo logró? ¿Sería divertido para ti? ¡El mercenario bocazas da un giro a lo retorcido en un cómic de terror como ningún otro!",
         stock: 10,
-        categoria: "Marvel",
+        categoria: "marvel",
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const data = [
         precio: 2300,
         descripcion: "Marvel Comics presenta a la nueva Ms. Marvel, ¡la heroína innovadora que se ha convertido en una sensación internacional! Kamala Khan es una chica ordinaria de la ciudad de Jersey, hasta que de repente se ve facultada con dones extraordinarios. Pero, ¿quién es realmente la nueva Ms. Marvel? ¿Adolescente? ¿Musulmán? ¿Inhumano? ¡Descubre cómo conquista el Universo Marvel!",
         stock: 10,
-        categoria: "Marvel",
+        categoria: "marvel",
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const data = [
         precio: 3100,
         descripcion: "Historieta de Hulk en la que escuchamos a Bruce Banner recordar como fueron sus primeros momentos como Hulk, contando algunos secretos y curiosidades que no vimos en el afamado Hulk #1",
         stock: 10,
-        categoria: "Marvel",
+        categoria: "marvel",
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const data = [
         precio: 3200,
         descripcion: "Bucky Barnes, el antiguo y futuro Soldado de Invierno, tomó el manto del Capitán América después de la aparente muerte de Steve Rogers. ¡Pero ahora Steve ha vuelto, y los dos Caps deben decidir cuál de ellos empuñará el escudo! Como el Gran Director, el Barón Zemo y Sin dificultan la vida de los héroes, Steve asume un nuevo rol como jefe de S.H.I.E.L.D. ¡Y el pasado secreto de Bucky queda expuesto al mundo! ¡Ahora, Steve debe correr para evitar que Bucky sea tragado por un gulag ruso! Pero cuando ocurran tragedias y el Escuadrón Serpiente regrese, ¿Steve tendrá la fuerza para seguir adelante?",
         stock: 10,
-        categoria: "Marvel",
+        categoria: "marvel",
     }
 ]
 
@@ -61,11 +61,9 @@ export function getUnComic(idParams) {
     })
 }
 
-export function getComicsByCategory(idCategoryParams) {
+export function getComicsByCategory(categoryId) {
     return new Promise((resolve) => {
-        let arrayFilterComics = data.filter(
-            (item) => item.categoria === idCategoryParams
-        )
-        setTimeout(() => resolve(arrayFilterComics), 2000)
+        let filterComics = data.filter( item => item.categoria === categoryId)
+        setTimeout(() => resolve(filterComics), 2000)
     })
 }

@@ -1,6 +1,7 @@
 import Logo from "../Logo/Logo"
 import CartWidget from "./CartWidget"
 import "./navbar.css"
+import { Link } from "react-router-dom"
 
 function NavBar() {
   return (
@@ -8,10 +9,10 @@ function NavBar() {
         <Logo/>
         <nav className="navBar">
             <ul className="navBarList">
-                <a href="#" className="navBarLink"><li>Accion</li></a>
-                <a href="#" className="navBarLink"><li>Cómico</li></a>
-                <a href="#" className="navBarLink"><li>Ciencia Ficcion</li></a>
-                <a href="#" className="navBarLink"><li>Mangas</li></a>
+                <Link to="/category/marvel" className="navBarLink"><li>Marvel</li></Link>
+                <Link to="/category/comico" className="navBarLink"><li>Cómico</li></Link>
+                <Link to="/category/ciencia-ficcion" className="navBarLink"><li>Ciencia Ficcion</li></Link>
+                <Link to="/category/mangas" className="navBarLink"><li>Mangas</li></Link>
             </ul>
         </nav>
         <CartWidget/>

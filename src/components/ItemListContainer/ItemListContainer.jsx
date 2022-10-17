@@ -4,25 +4,23 @@ import ItemList from "./ItemList/ItemList.jsx"
 import { getComics, getComicsByCategory } from "../../Comic_Api/comicApi"
 import { useParams } from "react-router-dom"
 
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer"
 
 function ItemListContainer() {  
 
-  const [comicsList, SetComicsList] = useState([])
-  const params = useParams()
-  const categoryID = params.categoryID
+  const [comicsList, setComicsList] = useState([])
+  const {categoryId} = useParams()
 
   useEffect(()=> {
-    if (categoryID === undefined) {
+    if (categoryId === undefined) {
       getComics().then((data) => {
-        SetComicsList(data)
+        setComicsList(data)
       })
     } else{
-      getComicsByCategory(categoryID).then((data) => {
-        SetComicsList(data)
+      getComicsByCategory(categoryId).then((data) => {
+        setComicsList(data)
       })
     }
-  }, [categoryID])
+  }, [categoryId])
 
   return (
     <div id="itemListContainer">

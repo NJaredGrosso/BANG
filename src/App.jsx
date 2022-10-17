@@ -13,7 +13,7 @@ function App() {
           <NavBar/>
           <Routes>
             <Route exact path="/" element={<ItemListContainer/>}/>
-            <Route exact path="/category/:categoryID" element={ <BrowserRouter/> }/>
+            <Route exact path="/category/:categoryId" element={ <ItemListContainer/> }/>
             <Route path="/comic/:id" element={<ItemDetailContainer/>}/>
             <Route path="*" element={ <h2>Direccion no encontrada</h2> } />
           </Routes>

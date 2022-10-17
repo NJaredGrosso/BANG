@@ -15,7 +15,7 @@ function ItemCount(props) {
     }
 
     function subtract(){
-        if (cantidad > 2){
+        if (cantidad > 1){
             console.log("Resta 1")
             setCantidad(cantidad - 1)            
         }else{
