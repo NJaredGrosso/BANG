@@ -4,7 +4,9 @@ import ItemList from "./ItemList/ItemList.jsx"
 import { getComics, getComicsByCategory } from "../../Comic_Api/comicApi"
 import { useParams } from "react-router-dom"
 
-function ItemListContainer(props) {  
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer"
+
+function ItemListContainer() {  
 
   const [comicsList, SetComicsList] = useState([])
   const params = useParams()

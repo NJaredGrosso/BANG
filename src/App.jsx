@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<ItemListContainer/>}/>
             <Route exact path="/category/:categoryID" element={ <BrowserRouter/> }/>
-            <Route path="/comic/:comicID" element={<ItemDetailContainer/>}/>
+            <Route path="/comic/:id" element={<ItemDetailContainer/>}/>
             <Route path="*" element={ <h2>Direccion no encontrada</h2> } />
           </Routes>
         </BrowserRouter>

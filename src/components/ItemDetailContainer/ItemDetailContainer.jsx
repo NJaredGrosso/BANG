@@ -1,25 +1,27 @@
 import React, { useState, useEffect} from "react"
 
-import { getUnComic } from "../../Comic_Api/comicApi"
+import { getUnComic } from "../../Comic_Api/comicApi.js"
 import "./itemDetailContainer.css"
-import { useParams } from "react-router-dom"
+
 import CardDetail from "./CardDetail"
 
-function ItemDetailContainer(props) {
+import { useParams } from "react-router-dom"
+
+function ItemDetailContainer() {
 
     const [comic, setComic] = useState([])
-    const {itemID} = useParams()
 
+    const { id } = useParams()
 
     useEffect(() => {
-        getUnComic(itemID).then((data) => {
+        getUnComic(id).then((data) => {
             setComic(data);
         })
-    }, [itemID])
+    }, [id])
 
     return(
         <div id="itemDetail">
-            <CardDetail comic={comic} />
+            <CardDetail comic={comic}/>
         </div>
     )
 }

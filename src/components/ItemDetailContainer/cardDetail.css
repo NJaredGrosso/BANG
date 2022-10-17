@@ -1,0 +1,13 @@
+#cardDetail{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#itemDetailPortada{
+    width: 100%;
+}
+
+#itemDetailPortadaImg{
+    width: 100%;
+}

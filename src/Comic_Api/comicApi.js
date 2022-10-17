@@ -54,10 +54,10 @@ export function getComics(){
 
 export function getUnComic(idParams) {
     return new Promise((resolve) => {
-        let comicReq = data.find((item) =>{
-            return item.id === Number(idParams)
+        let comicReq = data.find( (comic) => {
+            return comic.id === Number(idParams)
         })
-        setTimeout(()=> resolve(comicReq), 2000)
+        setTimeout(() => resolve(comicReq), 2000)
     })
 }
 
