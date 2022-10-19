@@ -1,4 +1,4 @@
-import React, {useState, useEffect, createElement} from "react"
+import React, {useState, useEffect} from "react"
 import "./itemlistcontainer.css"
 import ItemList from "./ItemList/ItemList.jsx"
 import { getComics, getComicsByCategory } from "../../Comic_Api/comicApi"

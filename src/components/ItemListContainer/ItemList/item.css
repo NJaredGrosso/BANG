@@ -1,14 +1,51 @@
+.link{
+    text-decoration: none;
+}
+
 #itemListComics{
     height: 100%;
+    background-color: rgb(237, 238, 181);
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #itemListComicsIndividual{
     height: 100%;
     width: 100%;
+    padding: 0.5rem;
 }
 
 #portadaComic{
-    height: 90%;
-    width: 90%;
+    width: 100%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+#title{
+    height: 1%;
+    text-align: center;
+    overflow: visible;
+    color: black;
+    font-size: medium;
+}
+
+#price{
+    width:fit-content;
+    background-color: red;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    color: black;
+    position: relative;
+    top: -92%;
+    right: -75%;
+    transform: rotate(0.10turn);
+    font-size: large;
 }
 
