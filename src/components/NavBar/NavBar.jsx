@@ -9,6 +9,7 @@ function NavBar() {
         <Logo/>
           <nav className="navBar">
               <ul className="navBarList">
+                  <Link to="/" className="navBarLink"><li>Inicio</li></Link>
                   <Link to="/category/marvel" className="navBarLink"><li>Marvel</li></Link>
                   <Link to="/category/dc" className="navBarLink"><li>DC</li></Link>
                   <Link to="/category/ciencia-ficcion" className="navBarLink"><li>Ciencia Ficcion</li></Link>

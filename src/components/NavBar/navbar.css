@@ -9,8 +9,11 @@
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    background-color: rgb(237, 238, 181);
+    background-image: linear-gradient(rgb(236, 236, 188), rgb(228, 228, 143));
     border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 .navBar{
     width: 60%;
@@ -23,13 +26,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
 }
 .navBarLink{
     height: 100%;
     width: 100%;
     padding: 0.5rem;
-    background-color: rgb(240, 241, 161);
     color: rgb(0, 162, 255);
     -webkit-text-stroke: 0.75px black;
     text-align: center;
