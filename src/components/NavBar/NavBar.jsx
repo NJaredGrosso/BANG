@@ -7,14 +7,14 @@ function NavBar() {
   return (
     <header className="header">
         <Logo/>
-        <nav className="navBar">
-            <ul className="navBarList">
-                <Link to="/category/marvel" className="navBarLink"><li>Marvel</li></Link>
-                <Link to="/category/comico" className="navBarLink"><li>Cómico</li></Link>
-                <Link to="/category/ciencia-ficcion" className="navBarLink"><li>Ciencia Ficcion</li></Link>
-                <Link to="/category/mangas" className="navBarLink"><li>Mangas</li></Link>
-            </ul>
-        </nav>
+          <nav className="navBar">
+              <ul className="navBarList">
+                  <Link to="/category/marvel" className="navBarLink"><li>Marvel</li></Link>
+                  <Link to="/category/dc" className="navBarLink"><li>DC</li></Link>
+                  <Link to="/category/ciencia-ficcion" className="navBarLink"><li>Ciencia Ficcion</li></Link>
+                  <Link to="/category/manga" className="navBarLink"><li>Mangas</li></Link>
+              </ul>
+          </nav>
         <CartWidget/>
     </header>
   )
