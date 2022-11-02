@@ -1,13 +1,17 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import ItemCount from "./ItemCount";
+import { cartContext } from "../../context/cartContext";
+import { Link } from "react-router-dom";
+
 import "./cardDetail.css"
 
 function CardDetail({comic}) {
     const [cuenta, setCuenta] = useState(0)
+    const { addToCart, removeItem} = useContext(cartContext)
 
     function handleAddToCart(cuenta) {
+        addToCart(comic, cuenta)
         setCuenta(cuenta)
-        console.log("Se agrego al carrito", comic, cuenta)
     }
 
 
@@ -23,9 +27,9 @@ function CardDetail({comic}) {
                             stock={comic.stock}
                             onAddToCart={handleAddToCart}/>
                     ) : (
-                        <a href="/cart">Mostrar Carrito</a>
+                        <Link to="/cart">Mostrar Carrito</Link>
                     )}
-                    
+                    <button onClick={() => removeItem(comic.id)}>Eliminar del carrito</button>
                     
                     <p>{comic.descripcion}</p>
                 </div>
