@@ -1,0 +1,60 @@
+.cartView{
+    min-height: 84.7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.cartItem{
+    margin-top: 10px;
+    height: 100%;
+    width: 80%;
+    padding: 10px;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+.cartImgContainer{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+.cartItemImg{
+    height: 90px;
+
+}
+.cartInfo{
+    width: 65%;
+}
+.deleteButtonItem{
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 50%;
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+.totalBar{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buyButton{
+    width: 12%;
+    min-width: fit-content;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    margin-left: 10%;
+    font-weight: bolder;
+    font-size: large;
+}

@@ -1,5 +1,8 @@
 #itemDetail{
     height: 90%;
     width: 90%;
-    padding: 5%;
+    padding: 1%;
+    display: flex;
+
 }
+

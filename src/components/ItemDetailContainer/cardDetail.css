@@ -2,12 +2,57 @@
     height: 100%;
     width: 100%;
     display: flex;
+    gap: 5%;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 #itemDetailPortada{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 #itemDetailPortadaImg{
-    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    min-height: 10rem;
+    width: 59%;
+    box-shadow: 5px 5px 15px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.actionButton{
+    height: fit-content;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.description{
+    text-align:justify
+}
+.infoItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#mainInfoItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    #cardDetail{
+        flex-direction: column;
+    }
 }
