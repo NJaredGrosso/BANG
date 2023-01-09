@@ -1,8 +1,7 @@
-#itemDetail{
-    height: 90%;
-    width: 90%;
-    padding: 1%;
-    display: flex;
-
+#itemDetail {
+	min-height: 80vh;
+	width: 90%;
+	padding: 1%;
+	display: flex;
+	align-items: center;
 }
-

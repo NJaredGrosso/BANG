@@ -1,22 +1,22 @@
-#contador{
-    display: flex;
-    width: 60%;
-    padding: 5px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    justify-content: space-between;
-    border: 2px solid black;
-    border-radius: 1rem;
-    overflow: hidden;
-    background-color: rgb(211, 211, 211);
+#contador {
+	display: flex;
+	width: 60%;
+	padding: 5px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	justify-content: space-between;
+	border: 2px solid black;
+	border-radius: 1rem;
+	overflow: hidden;
+	background-color: rgb(211, 211, 211);
 }
 
-.contadorButtons{
-    height: 100%;
-    min-width: 5%;
-    background-color: rgba(0, 0, 0, 0.205);
-    border: 2px solid black;
-    border-radius: 50%;
-    cursor: pointer;
-    font-weight: bolder;
+.contadorButtons {
+	height: 100%;
+	width: 1.2rem;
+	background-color: rgba(0, 0, 0, 0.205);
+	border: 2px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+	font-weight: bolder;
 }

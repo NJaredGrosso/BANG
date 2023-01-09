@@ -1,58 +1,77 @@
-#cardDetail{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    gap: 5%;
-    background-color: rgba(0, 0, 0, 0.26);
-    padding: 1rem;
-    border-radius: 1rem;
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+
+#cardDetail {
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	gap: 5%;
+	background-color: rgba(0, 0, 0, 0.26);
+	padding: 1rem;
+	border-radius: 1rem;
 }
 
-#itemDetailPortada{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.26);
-    border-radius: 1rem;
-    padding: 1rem;
+#itemDetailPortada {
+	min-width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.26);
+	border-radius: 1rem;
+	padding: 1.5rem;
 }
 
-#itemDetailPortadaImg{
-    object-fit: contain;
-    height: 100%;
-    min-height: 10rem;
-    width: 59%;
-    box-shadow: 5px 5px 15px;
+#itemDetailPortadaImg {
+	object-fit: contain;
+	height: 100%;
+	min-height: 10rem;
+	width: 20vw;
+	min-width: 200px;
+	box-shadow: 5px 5px 15px;
 }
 
-.buttons{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.buttons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
 }
-.actionButton{
-    height: fit-content;
-    padding: .5rem;
-    border-radius: 1rem;
-}
-
-.description{
-    text-align:justify
-}
-.infoItem{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.actionButton {
+	height: fit-content;
+	padding: 0.5rem;
+	border-radius: 1rem;
 }
 
-#mainInfoItem{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.description {
+	text-align: justify;
+	width: 80%;
+	height: 40%;
+}
+.infoItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#mainInfoItem {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.oculto {
+	display: none;
+}
+.title {
+	font-family: "Vast Shadow", cursive;
+	font-weight: 500;
 }
 
 @media (max-width: 800px) {
-    #cardDetail{
-        flex-direction: column;
-    }
+	#cardDetail {
+		flex-direction: column;
+	}
 }
