@@ -22,7 +22,7 @@
 
 #itemDetailPortadaImg {
 	object-fit: contain;
-	height: 100%;
+	height: fit-content;
 	min-height: 10rem;
 	width: 20vw;
 	min-width: 200px;
@@ -45,9 +45,10 @@
 .description {
 	text-align: justify;
 	width: 80%;
-	height: 40%;
+	min-height: fit-content;
 }
 .infoItem {
+	min-height: fit-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
