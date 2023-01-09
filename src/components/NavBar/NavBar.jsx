@@ -16,7 +16,7 @@ function NavBar() {
 
 			<nav className="navBar" id="nav">
 				<ul className="navBarList">
-					<Link to="/" className="navBarLink">
+					<Link to="/BANG" className="navBarLink">
 						<li>INICIO</li>
 					</Link>
 					<Link to="/category/marvel" className="navBarLink">

@@ -13,7 +13,7 @@ function App() {
 				<BrowserRouter>
 					<NavBar />
 					<Routes>
-						<Route exact path="/BANG/" element={<ItemListContainer />} />
+						<Route exact path="/BANG" element={<ItemListContainer />} />
 						<Route
 							exact
 							path="/category/:categoryId"
